@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form</title>
+    <link rel="stylesheet" href="./src/style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+        <form action="" id="contact-form">
+            <label for="name" >Qual é o seu nome?</label>
+            <input type="text" id="name" name="name" required> 
+            <label for="email">Digite seu email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Escreva uma mensagem aqui:</label>
+            <textarea name="message"id="message" cols="20" rows="3" maxlength="100" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="./src/service/email/send-email.js"></script>
+</body>
+</html>
