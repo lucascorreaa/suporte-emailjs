@@ -1,10 +1,32 @@
-body, 
-.contact-container, 
-form {
+body, nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    gap: 25px;
+    background-image: url("https://github.com/lucascorreaa/image-url-fake/assets/91700610/9edc4b62-56b1-4902-8d2d-3dfc67f241a7");
+}
+
+img {
+    width: 450px;
+    height: 450px;
+}
+
+nav {
+    margin-top: 2px;
+    flex-direction: row;
+    gap: 50px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+a:hover {
+    color: blue;
 }
 
 
