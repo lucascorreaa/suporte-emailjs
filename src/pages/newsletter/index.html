@@ -9,6 +9,10 @@
 </head>
 <body>
     <button type="button" onclick="handleEmail()">Enviar Newsletter</button>
-    <script src="../../service/email/scripts/send-email.js"></script>
+    <script type="module">
+        import { handleEmail } from '../../service/email/scripts/send-email.js';
+        
+        window.handleEmail = handleEmail; // Expondo a função globalmente
+    </script>
 </body>
 </html>

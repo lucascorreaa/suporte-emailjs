@@ -1,20 +1,23 @@
+import env from '../../../config/config.js';
+
 emailjs.init({
-    publicKey: "oFxQSa31QMcD-3UX7"
-})
+  publicKey: env.jS_APP_EMAILJS_PUBLICKEY,
+});
 
-function handleEmail() {
+export function handleEmail() {
+  let templateParams = {
+    user_name: "Destinatário",
+    user_email: "suportededomingo@outlook.com",
+    from_name: "EmailJS de Domingo",
+    message: "Ei dev, Thanks? Venho te trazer novidades...",
+  };
 
-    let templateParams = {
-        name: "Destinatário",
-        user_email: "suportededomingo@outlook.com",
-        from_name: "Suporte de Domingo",
-        message: "Conteúdo da mensagem aqui..."
-    }
-
-    emailjs.send("service_y960qy4", "template_l31yh4n", templateParams)
-        .then((res) => {
-            console.log("Email enviado com sucesso!", res.status, res.text)
-        }), (error) => {
-            console.error("Erro ao enviar o email", error)
-        }
+  emailjs
+    .send(env.jS_APP_EMAILJS_SERVICEID, env.jS_APP_EMAILJS_TEMPLATEID_SEND, templateParams)
+    .then((res) => {
+      console.log("Email enviado com sucesso!", res.status, res.text);
+    }),
+    (error) => {
+      console.error("Erro ao enviar o email", error);
+    };
 }
