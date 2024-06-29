@@ -1,20 +1,21 @@
-(function() {
-    emailjs.init({
-        publicKey: "oFxQSa31QMcD-3UX7",
-    })
-})();
+import env from '../../../config/config.js';
 
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault()
+emailjs.init({
+  publicKey: env.jS_APP_EMAILJS_PUBLICKEY,
+});
 
-    emailjs.sendForm("service_y960qy4", "template_n4fcw9f", this)
-    .then(
-        function() {
-            console.log("Success!")
-            alert("Email enviado com sucesso")
-        }
-    ), function(err) {
-        console.log("Fail", err)
-        alert("Falha ao enviar o email, tente mais tarde!")
-    }
-})
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(env.jS_APP_EMAILJS_SERVICEID, env.jS_APP_EMAILJS_TEMPLATEID_RECEIVED, this)
+      .then(() => {
+        console.log("Success!");
+        alert("Email enviado com sucesso");
+      }), (err) => {
+        console.log("Fail", err);
+        alert("Falha ao enviar o email, tente mais tarde!");
+      };
+  });
