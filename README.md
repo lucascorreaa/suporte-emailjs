@@ -1,6 +1,6 @@
 # Suporte EmailJS
 
-![Logo](https://github-production-user-asset-6210df.s3.amazonaws.com/91700610/344424134-c4ad488e-8e90-4416-9b72-6a8d8c9c5ada.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240629%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240629T180430Z&X-Amz-Expires=300&X-Amz-Signature=cd5658f633bd494aaaf1f6a74ce191867bd2c4a14b8c7d851dccb49092b44784&X-Amz-SignedHeaders=host&actor_id=91700610&key_id=0&repo_id=821878519)
+![Logo](https://github.com/lucascorreaa/image-url-fake/assets/91700610/095f59b2-a8bd-477a-af6a-3ff5138d7096)
 
 ## _The best support, Ever_
 
