@@ -2,7 +2,7 @@
 
 ![Logo](https://github.com/lucascorreaa/image-url-fake/assets/91700610/095f59b2-a8bd-477a-af6a-3ff5138d7096)
 
-## _The best support, Ever_
+## _The best support, Always_
 
 Este projeto fornece uma interface simples e eficaz para enviar e receber emails usando o EmailJS. É ideal para quem precisa de uma solução rápida e fácil para integrar envio de emails em seus projetos.
 
@@ -33,7 +33,7 @@ Este projeto fornece uma interface simples e eficaz para enviar e receber emails
     cd suporte-emailjs
     ```
     
-3. Crie um arquivo config.js dentro do diretório config, para setar suas credenciais, você vai encontrar elas na área logada da EmailJS:
+3. Crie um diretório config dentro de src/ e adicione um arquivo config.js, para setar suas credenciais, você vai encontrar elas na área logada da EmailJS:
 
     ```sh
         const env = {
